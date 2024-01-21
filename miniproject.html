@@ -1,0 +1,277 @@
+<html>
+  <head>
+
+<style>   
+    body {
+        background-color: rgb(234, 247, 218);
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto Slab", serif;
+      }
+      header {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgb(62, 164, 207) 0%,
+          rgb(79, 70, 70) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+        padding: 20px;
+      }
+      .headerContainer {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .contentHolder {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .imgProfile {
+        width: 200px;
+        height: 200px;
+        border: 5px solid white;
+        border-radius: 100%;
+        box-shadow: 5px 5px 10px 2px rgba(84, 43, 111, 0.485);
+        transition: all;
+        transition-duration: 1s;
+      }
+      .imgProfile:hover {
+        margin-left: -10px;
+      }
+      .holderImgProfile {
+        flex: 1;
+        text-align: center;
+      }
+      .holderDetailProfile {
+        flex: 2;
+      }
+      .nameProfile {
+        font-size: 48px;
+        color: white;
+        font-weight: 600;
+      }
+      .titleProfile {
+        color: white;
+        font-size: 36px;
+      }
+      .button {
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 10px 0 0;
+        font-family: "Roboto Slab", serif;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all;
+        transition-duration: 1s;
+      }
+      .button.download {
+        background-color: #e6e9ed;
+        color: rgb(43, 43, 43);
+        cursor: pointer;
+      }
+      .button.hire {
+        background-color: #37bc9b;
+        color: white;
+        cursor: pointer;
+      }
+      .button:hover {
+        transform: scale(1.1);
+      }
+      .barContainer {
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        background-color: rgb(235, 233, 233);
+        position: relative;
+      }
+      .barFilling {
+        position: absolute;
+
+        height: 20px;
+        border-radius: 20px;
+        transition: all;
+        transition-duration: 1s;
+      }
+      .green {
+        background-color: rgb(30, 195, 181);
+        width: 90%;
+      }
+      .orange {
+        background-color: rgb(245, 173, 113);
+        width: 84%;
+      }
+      .purple {
+        background-color: rgb(245, 113, 225);
+        width: 5%;
+      }
+      .subContent {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(53, 53, 53);
+      }
+      h3 {
+        font-weight: 600;
+      }
+      .skillBar {
+        display: block;
+        margin: 10px 0;
+      }
+      ul.workEx li {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+      ul.workEx li:first-child {
+        padding-top: 0;
+      }
+      span strong {
+        color: #1eb574;
+      }
+      .subWorkEx {
+        font-size: 16px;
+        color: rgb(66, 66, 66);
+        font-weight: 400;
+      }
+      footer {
+        background-color: rgb(76, 75, 75);
+        text-align: center;
+      }
+
+      .footerHolder {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .footerName {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+      }
+    </style>    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="headerContainer">
+      <div class="holderImgProfile">
+        <img
+          class="imgProfile"
+          src="p.jpeg"
+        />
+      </div>
+      <div class="holderDetailProfile">
+        <div class="nameProfile">Nazmia</div>
+        <div class="titleProfile">Graphic Designer & Web Developer</div>
+        <div>
+          <button class="button download">Download CV</button>
+          <button class="button hire">Hire Me</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="contentHolder">
+      <div>
+        <h1>About me</h1>
+        <div class="subContent">
+          Hello! I’m Nazmia Htsalisa. I am passionate about UI/UX design and Web
+          Design. I am a skilled Front-end Developer and master of Graphic
+          Design tools such as Photoshop and Sketch.
+        </div>
+      </div>
+      <div>
+        <h1>Professional Skill</h1>
+        <div class="skillBar">
+          <h3>HTML</h3>
+          <div class="barContainer">
+            <div class="barFilling green"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>CSS</h3>
+          <div class="barContainer">
+            <div class="barFilling orange"></div>
+          </div>
+        </div>
+        <div class="skillBar">
+          <h3>Javascript</h3>
+          <div class="barContainer">
+            <div class="barFilling purple"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Work Experience</h1>
+        <ul class="workEx">
+          <li>
+            <div>
+              <span
+                >Frontend Developer at <strong>Creative Agency</strong></span
+              >
+              <br />
+              <span class="subWorkEx"
+                >Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition.</span
+              >
+            </div>
+          </li>
+          <li>
+            <div>
+              <span
+                >Frontend Developer at <strong>Creative Agency</strong></span
+              >
+              <br />
+              <span class="subWorkEx"
+                >Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition.</span
+              >
+            </div>
+          </li>
+          <li>
+            <div>
+              <span
+                >Frontend Developer at <strong>Creative Agency</strong></span
+              >
+              <br />
+              <span class="subWorkEx"
+                >Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition.</span
+              >
+            </div>
+          </li>
+          <li>
+            <div>
+              <span
+                >Frontend Developer at <strong>Creative Agency</strong></span
+              >
+              <br />
+              <span class="subWorkEx"
+                >Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition.</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footerHolder">
+      <div class="footerName">&copy; 2024 Nazmia salisa</div>
+    </div>
+  </footer>
+</html>
